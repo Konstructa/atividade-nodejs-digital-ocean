@@ -68,7 +68,7 @@ app.put('/heroi/:id', (req, res) => {
 
     if (!listaHerois[id] ||
         !req.body.nome ||
-        !req.body.nome === ""
+        req.body.nome === ""
         ){
         res.status(406).send(
             "Você digitou o ID errado e/ou não inseriu o valor de mudança"
