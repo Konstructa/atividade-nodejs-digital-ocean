@@ -1,2 +1,2 @@
-# atividade-nodejs-digital-ocean
+# API de heróis.
 Back-end com Nodejs/Express e MongoDB.
