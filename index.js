@@ -1,11 +1,14 @@
 const express = require('express');
 const {MongoClient, ObjectId} = require('mongodb')
 
-const url = "mongodb://localhost:27017";
+//const url = "mongodb://localhost:27017";
+const url = process.env.URL;
 const dbName = "aula_ocean";
 const port = 3000;
 
-const listaHerois = ["Capitã América", "Viuva Negra", "Batwoman"]
+const dotenv = require('dotenv');
+dotenv.config();
+
 
 async function main () {
 
@@ -139,10 +142,9 @@ async function main () {
     });
 
 
-    app.listen(port, () => {
-        console.log(`Servidor iniciado na porta ${port}`)
-    });
+    app.listen(process.env.PORT || port);
 
     }
 
 main()
+
