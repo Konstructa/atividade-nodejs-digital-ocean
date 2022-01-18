@@ -1,9 +1,8 @@
 const express = require('express');
 const {MongoClient, ObjectId} = require('mongodb')
-const dotenv = require('dotenv');
-dotenv.config();
+require("dotenv").config();
 
-const url = "mongodb+srv://admin:XjPt4tsjBSvJ2eK@cluster0.gv1ny.mongodb.net" || process.env.URL;
+const url = "mongodb+srv://admin:XjPt4tsjBSvJ2eK@cluster0.gv1ny.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" || process.env.URL;
 const dbName = "aula_ocean";
 const port = 3000;
 
