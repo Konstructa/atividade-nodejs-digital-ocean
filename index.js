@@ -2,7 +2,7 @@ const express = require('express');
 const {MongoClient, ObjectId} = require('mongodb')
 
 //const url = "mongodb://localhost:27017";
-const url = process.env.URL;
+const url = "mongodb+srv://admin:XjPt4tsjBSvJ2eK@cluster0.gv1ny.mongodb.net";
 const dbName = "aula_ocean";
 const port = 3000;
 
