@@ -1,13 +1,12 @@
 const express = require('express');
 const {MongoClient, ObjectId} = require('mongodb')
+const dotenv = require('dotenv');
+dotenv.config();
 
-//const url = "mongodb://localhost:27017";
-const url = "mongodb+srv://admin:XjPt4tsjBSvJ2eK@cluster0.gv1ny.mongodb.net";
+const url = "mongodb+srv://admin:XjPt4tsjBSvJ2eK@cluster0.gv1ny.mongodb.net" || process.env.URL;
 const dbName = "aula_ocean";
 const port = 3000;
 
-const dotenv = require('dotenv');
-dotenv.config();
 
 
 async function main () {
