@@ -123,7 +123,7 @@ async function main () {
         //ou req.body e dps so o id.id
         const id = req.params.id;
 
-        /* const isFound = await collection.findOne({ _id: new ObjectId(id) });
+         const isFound = await collection.findOne({ _id: new ObjectId(id) });
 
          if (!isFound) {
             res.status(404).send(
@@ -131,7 +131,7 @@ async function main () {
                 );
             
             return
-        }  */
+        }  
 
         await collection.deleteOne({_id : new ObjectId(id)})
 
